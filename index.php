@@ -22,10 +22,10 @@ header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Ac
 
 
 // Init database
-$servername = "localhost";
-$username = "root";
-$password = 'Dofl$mingo432';
-$database = "scandiweb";
+$servername = "us-cdbr-east-06.cleardb.net";
+$username = "b5d50a1d05cef8";
+$password = 'a97c1d45';
+$database = "heroku_c97f13ded679cd5";
 
 $conn = new PDO("mysql:host=$servername;dbname=$database", $username, $password);
 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -83,3 +83,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'DELETE'){
         echo "Error deleting: {$e->getMessage()}";
     }
 }
+
+?>
